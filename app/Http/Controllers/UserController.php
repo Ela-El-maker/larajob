@@ -29,6 +29,7 @@ class UserController extends Controller
             'user_type' => self::JOB_SEEKER,
         ]);
 
-        return back();
+        // return back();
+        return redirect()->route('register.seeker')->with('success', 'Registration successful');
     }
 }
